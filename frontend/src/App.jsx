@@ -4,16 +4,15 @@ import LoginPage from './pages/LoginPage';
 import Preferences from './pages/Preferences';
 import ItineraryResult from './pages/ItineraryResult';
 
-import Navbar from './components/Navbar'; // ✅ single consistent navbar
-
+import Navbar from './components/Navbar';  
 function App() {
   return (
     <Router>
       <div className="min-h-screen bg-[#1F1B2E] text-white font-sans">
-        {/* ✅ Always show Navbar */}
+         
         <Navbar />
 
-        {/* ✅ App Routes */}
+        {/*  App Routes */}
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/login" element={<LoginPage />} />
